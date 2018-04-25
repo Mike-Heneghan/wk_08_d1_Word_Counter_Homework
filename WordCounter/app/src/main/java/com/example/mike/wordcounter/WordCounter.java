@@ -1,5 +1,6 @@
 package com.example.mike.wordcounter;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 /**
@@ -7,18 +8,14 @@ import java.util.ArrayList;
  */
 
 public class WordCounter {
-    private String paragraph;
-    private ArrayList<String> words;
-
 
     public WordCounter(){
-        this.paragraph = null;
-        this.words = new ArrayList<>();
     }
 
     public int countWords(String paragraph){
         String[] words = paragraph.split(" ");
-        return words.length;
+        return (words.length);
+
     }
 
 
